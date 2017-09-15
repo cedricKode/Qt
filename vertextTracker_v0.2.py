@@ -75,3 +75,6 @@ for v in vsel:
     
     
     addTracker(vtx_pos)
+
+
+#https://en.wikipedia.org/wiki/Transformation_matrix
