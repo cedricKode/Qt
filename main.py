@@ -21,7 +21,8 @@ def delTracker():
 	
 
 def addTracker( vtx_pos ):
-    node = nuke.thisNode()
+    #Grab this node and et index init
+    node = nuke.selectedNode()
     index = node.knob('index').value()
     index = int(index)     # value return a float
     
