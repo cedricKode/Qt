@@ -227,4 +227,23 @@ def search_upstream(node, cameras=list()):
                 search_upstream(dnode, cameras)
     return cameras
     
+    ##################################################☻
+    
+    
+    for v in vsel:
+    tracker_list = ()
+    position =v.position
+    x = position[0]
+    y = position[1]
+    z = position[2]
+
+    data = np.concatenate((x, y, z), axis=1)
+
+    pos = (v.position.x, v.position.y, v.position.z)
+    
+    addTracker(pos)
+    
+    
+    https://community.foundry.com/discuss/topic/102084
+https://community.foundry.com/discuss/topic/113353
     
