@@ -7,7 +7,7 @@ class mainPanel(QtGui.QWidget):
     def __init__(self):
         QtGui.QWidget.__init__(self)
 
-        self.slider = QtGui.QSlider(self)
+        self.slider = QtGui.QSlider(QtCore.Qt.Horizontal, self)
         self.setWindowTitle('Slider')
         self.setMaximumHeight (50)
         #self.label = QtGui.QLabel(self)
