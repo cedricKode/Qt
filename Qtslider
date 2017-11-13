@@ -1,29 +1,26 @@
-import PySide.QtCore as QtCore
-import PySide.QtGui as QtGui
-from nukescripts import panels
+from PySide.QtGui import *
+from PySide.QtCore import *
+import sys
 
-class mainPanel(QtGui.QWidget):
 
+
+
+class Slider(QWidget):
     def __init__(self):
-        QtGui.QWidget.__init__(self)
+        super(Slider, self).__init__()
 
-        self.slider = QtGui.QSlider(QtCore.Qt.Horizontal, self)
-        self.setWindowTitle('Slider')
-        self.setMaximumHeight (50)
-        #self.label = QtGui.QLabel(self)
-        self.setGeometry(30, 40, 100, 30)
-        #self.setLayout( QtGui.QBoxLayout() )
-        #self.layout().addWidget( self.slider )
-        #self.testBtn.clicked.connect(self.createPanel)
-        #self.setSizePolicy( QtGui.QSizePolicy( QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Expanding))
+        slider = QSlider()
+        slider.setOrientation(Qt.Horizontal)
+        slider.setTickPosition(QSlider.TicksAbove)
+        slider.setTickInterval(1)
 
-    #def closeEvent():
-       # print 'Closed mainPanel'
+        layout = QHBoxLayout()
+        layout.addWidget(slider)
+        self.setLayout(layout)
 
-    #def createPanel(self):
-        #pane = nuke.getPaneFor("example.test.panel")
-        #print pane
-        #panels.registerWidgetAsPanel('PanelTest', 'PanelTest',"example.test.panel", True).addToPane(pane)
 
-mp = mainPanel()
-mp.show()
+
+app = QApplication(sys.argv)
+slider = Slider()
+slider.show()
+app.exec_()
