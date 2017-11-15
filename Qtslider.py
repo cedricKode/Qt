@@ -4,17 +4,21 @@ import sys
 
 
 class Tool(QWidget):
-    
+
     def __init__(self):
         super(Tool, self).__init__()
         self.set_style_sheet()
         self.slider()
         self.SetTicks()
-        
+
     def SetTicks(self):
         self.slider.setOrientation(Qt.Horizontal)
+        self.slider.setMinimum(0)
+        self.slider.setMaximum(1000)
+        self.slider.setSingleStep(0)
+        self.slider.setPageStep(5)
+        self.slider.setTickInterval(5)
         self.slider.setTickPosition(QSlider.TicksAbove)
-        self.slider.setTickInterval(1)
 
     def slider(self):
         self.slider = QSlider()
