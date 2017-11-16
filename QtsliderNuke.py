@@ -2,11 +2,398 @@ import PyQt4.QtGui as QtGui
 import PyQt4.QtCore as QtCore
 import sys
 import math
+import PyQt4.QtGui as QtGui
+2
+import PyQt4.QtCore as QtCore
+3
+import sys
+4
+import math
+5
+​
+6
+​
+7
+class Slider(QtGui.QSlider):
+8
+​
+9
+    def __init__(self, mini=0, maxi=100, color=None):
+10
+        super(Slider, self).__init__()
+11
+        self.mini = mini
+12
+        self.maxi = maxi
+13
+        self.setStyleSheet(self.stylesheet())
+14
+        self.setOrientation(QtCore.Qt.Horizontal)
+15
+        self.setTickPosition(QtGui.QSlider.TicksAbove)
+16
+        self.setMouseTracking(True)
+17
+        self.setMinimum(mini * 1000)
+18
+        self.setMaximum(maxi * 1000)
+19
+        self.ticks =DrawTicks(mini,max)
+20
+        self.setTickInterval((maxi-mini)/10)
+21
+        self.setMouseTracking(True)
+22
+      
+23
+        
+24
+​
+25
+​
+26
+​
+27
+#       #Layout
+28
+    def slider(self):
+29
+        self.slider = Slider()        
+30
+        layout = QtGui.QVBoxLayout()
+31
+        layout.addWidget(self.slider)
+32
+        self.setLayout(layout)
+33
+​
+34
+​
+35
+    def stylesheet(self):
+36
+        return """ 
+37
+      QSlider::groove:horizontal {
+38
+        height: 4px;
+39
+        border: 1px solid black;
+40
+        border-radius: 3px;
+41
+        background: orange;
+42
+        }
+43
+        
+44
+        QSlider::handle:horizontal {
+45
+        border: 1px solid black;
+46
+        height: 4px;
+47
+        width: 3px;
+48import PyQt4.QtGui as QtGui
+2
+import PyQt4.QtCore as QtCore
+3
+import sys
+4
+import math
+5
+​
+6
+​
+7
+class Slider(QtGui.QSlider):
+8
+​
+9
+    def __init__(self, mini=0, maxi=100, color=None):
+10
+        super(Slider, self).__init__()
+11
+        self.mini = mini
+12
+        self.maxi = maxi
+13
+        self.setStyleSheet(self.stylesheet())
+14
+        self.setOrientation(QtCore.Qt.Horizontal)
+15
+        self.setTickPosition(QtGui.QSlider.TicksAbove)
+16
+        self.setMouseTracking(True)
+17
+        self.setMinimum(mini * 1000)
+18
+        self.setMaximum(maxi * 1000)
+19
+        self.ticks =DrawTicks(mini,max)
+20
+        self.setTickInterval((maxi-mini)/10)
+21
+        self.setMouseTracking(True)
+22
+      
+23
+        
+24
+​
+25
+​
+26
+​
+27
+#       #Layout
+28
+    def slider(self):
+29
+        self.slider = Slider()        
+30
+        layout = QtGui.QVBoxLayout()
+31
+        layout.addWidget(self.slider)
+32
+        self.setLayout(layout)
+33
+​
+34
+​
+35
+    def stylesheet(self):
+36
+        return """ 
+37
+      QSlider::groove:horizontal {import PyQt4.QtGui as QtGui
+2
+import PyQt4.QtCore as QtCore
+3
+import sys
+4
+import math
+5
+​
+6
+​
+7
+class Slider(QtGui.QSlider):
+8
+​
+9
+    def __init__(self, mini=0, maxi=100, color=None):
+10
+        super(Slider, self).__init__()
+11
+        self.mini = mini
+12
+        self.maxi = maxi
+13
+        self.setStyleSheet(self.stylesheet())
+14
+        self.setOrientation(QtCore.Qt.Horizontal)
+15
+        self.setTickPosition(QtGui.QSlider.TicksAbove)
+16
+        self.setMouseTracking(True)
+17
+        self.setMinimum(mini * 1000)
+18
+        self.setMaximum(maxi * 1000)
+19
+        self.ticks =DrawTicks(mini,max)
+20
+        self.setTickInterval((maxi-mini)/10)
+21
+        self.setMouseTracking(True)
+22
+      
+23
+        
+24
+​
+25
+​
+26
+​
+27
+#       #Layout
+28
+    def slider(self):
+29
+        self.slider = Slider()        
+30
+        layout = QtGui.QVBoxLayout()
+31
+        layout.addWidget(self.slider)
+32
+        self.setLayout(layout)
+33
+​
+34
+​
+35
+    def stylesheet(self):
+36
+        return """ 
+37import PyQt4.QtGui as QtGui
+2
+import PyQt4.QtCore as QtCore
+3
+import sys
+4
+import math
+5
+​
+6
+​
+7
+class Slider(QtGui.QSlider):
+8
+​
+9
+    def __init__(self, mini=0, maxi=100, color=None):
+10
+        super(Slider, self).__init__()
+11
+        self.mini = mini
+12
+        self.maxi = maxi
+13
+        self.setStyleSheet(self.stylesheet())
+14
+        self.setOrientation(QtCore.Qt.Horizontal)
+15
+        self.setTickPosition(QtGui.QSlider.TicksAbove)
+16
+        self.setMouseTracking(True)
+17
+        self.setMinimum(mini * 1000)
+18
+        self.setMaximum(maxi * 1000)
+19
+        self.ticks =DrawTicks(mini,max)
+20
+        self.setTickInterval((maxi-mini)/10)
+21
+        self.setMouseTracking(True)
+22
+      
+23
+        
+24
+​
+25
+​
+26
+​
+27
+#       #Layout
+28
+    def slider(self):
+29
+        self.slider = Slider()        
+30
+        layout = QtGui.QVBoxLayout()
+31
+        layout.addWidget(self.slider)
+32
+        self.setLayout(layout)
+33
+​
+34
+​
+35
+    def stylesheet(self):
+36
+        return """ 
+37
+      QSlider::groove:horizontal {
+38
+        height: 4px;
+39
+        border: 1px solid black;
+40
+        border-radius: 3px;
+41
+        background: orange;
+42
+        }
+43
+        
+44
+        QSlider::handle:horizontal {
+45
+        border: 1px solid black;
+46
+        height: 4px;
+47
+        width: 3px;
+48
+        border-radius: 1px ;
+49
+        background: darkGray;
+      QSlider::groove:horizontal {
+38
+        height: 4px;
+39
+        border: 1px solid black;
+40
+        border-radius: 3px;
+41
+        background: orange;
+42
+        }
+43
+        
+44
+        QSlider::handle:horizontal {
+45
+        border: 1px solid black;
+46
+        height: 4px;
+47
+        width: 3px;
+48
+        border-radius: 1px ;
+49
+        background: darkGray;
+38
+        height: 4px;
+39
+        border: 1px solid black;
+40
+        border-radius: 3px;
+41
+        background: orange;
+42
+        }
+43
+        
+44
+        QSlider::handle:horizontal {
+45
+        border: 1px solid black;
+46
+        height: 4px;
+47
+        width: 3px;
+48
+        border-radius: 1px ;
+49
+        background: darkGray;
+        border-radius: 1px ;
+49
+        background: darkGray;
+
 
 
 class Slider(QtGui.QSlider):
 
     def __init__(self, mini=0, maxi=100, color=None):
+
         super(Slider, self).__init__()
         self.mini = mini
         self.maxi = maxi
@@ -24,13 +411,13 @@ class Slider(QtGui.QSlider):
 
 
 
-#       #Layout
+#Layout
+
     def slider(self):
         self.slider = Slider()        
         layout = QtGui.QVBoxLayout()
         layout.addWidget(self.slider)
         self.setLayout(layout)
-
 
     def stylesheet(self):
         return """ 
@@ -43,9 +430,8 @@ class Slider(QtGui.QSlider):
         
         QSlider::handle:horizontal {
         border: 1px solid black;
-        height: 4px;
         width: 3px;
-        border-radius: 1px ;
+        border-radius: 3px ;
         background: darkGray;
         margin-top: -4px;
         margin-bottom: -4px;
@@ -96,7 +482,6 @@ class DrawTicks(QtGui.QWidget):
             fw = metrics.width(str(self.mini + i * step_size))
             painter.drawText(i * step_size - 1, h / 2.5,
                         str(round(float(self.mini + i * step_value), 2)))
-
 
 
 
