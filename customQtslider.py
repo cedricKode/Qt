@@ -24,9 +24,6 @@ class Slider(QtGui.QSlider):
         self.setMouseTracking(True)
       
         
-
-
-
 #Layout
 
     def slider(self):
@@ -105,3 +102,4 @@ app = QtGui.QApplication(sys.argv)
 tool = Slider()
 tool.show()
 app.exec_()
+
